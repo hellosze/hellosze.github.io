@@ -168,6 +168,55 @@
         });
       });
     </script>
+    
+    <style type="text/css">
+.modalDialog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height:434px;
+    width:829px;    
+    display:none;
+}
+#modal {
+	background-image: url("FB-LIKE-MOCK-KIM-K-NO-UNIT.jpg");
+	width: 829px;
+	height: 434px;
+	background-repeat: no-repeat;
+	position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;  
+  margin: auto;
+}
+.fb_iframe_widget {
+	position: absolute;
+	bottom: 32px;
+	right: 10px;
+}
+</style>
+<div id="fb-root"></div>
+<script>
+ window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '784666091652597',   // Your App ID
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+    var like_callback = function(response){
+      document.querySelector("#radarModal").style.display = "none";
+    }
+    FB.Event.subscribe('edge.create',like_callback);
+  };
+</script>
+<div class="modalDialog" id="radarModal">
+  <div id="modal">
+  <div class="fb-page" data-href="https://www.facebook.com/radaronline" data-width="350" data-height="224" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/radaronline"><a href="https://www.facebook.com/radaronline">Radar Online</a></blockquote></div></div>
+  </div>
+</div>
   
       <script type='text/javascript'>
         ybotq.push(function () {
