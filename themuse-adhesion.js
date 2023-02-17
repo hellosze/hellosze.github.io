@@ -80,5 +80,3 @@ window.onload = function(){
      });
  });
 
-
-}
