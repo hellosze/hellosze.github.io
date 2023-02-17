@@ -1,6 +1,6 @@
 (function(){
   var bp = document.createElement('script');
-  bp.src = "https://web.archive.org/web/20211025070829/https://securepubads.g.doubleclick.net/tag/js/gpt.js";
+  bp.src = "https://securepubads.g.doubleclick.net/tag/js/gpt.js";
    var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(bp, s);
 })();
@@ -35,7 +35,7 @@ window.onload = function(){
         var link = document.createElement('link');  
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = 'https://web.archive.org/web/20211025070829/https://prebid.mpwdigital.com/adhesion/themuse/themuse-adhesion.css';
+            link.href = 'https://hellosze.github.io/themuse-adhesion.css';
 
   document.body.appendChild(link);
 
