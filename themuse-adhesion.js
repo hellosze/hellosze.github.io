@@ -9,7 +9,7 @@ var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
 
 window.onload = function(){
     var adhesion_container = document.createElement("div");
-    adhesion_container.id = "mpw-adhesion-container";
+    adhesion_container.id = "muse_adhesion";
     var span_text = document.createElement("span");
     span_text.id = "mpw-text";
 
