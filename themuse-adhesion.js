@@ -36,7 +36,7 @@ window.onload = function(){
 
   if(document.querySelector("#adhesion-close") != null){
       document.querySelector("#adhesion-close").addEventListener("click",function(){
-          document.querySelector("#muse_container").style.display = "none";
+          document.querySelector("#muse_adhesion").style.display = "none";
       });
   }
   googletag.cmd.push(function() {
@@ -65,7 +65,7 @@ window.onload = function(){
      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
          var slot = event.slot;
          if(slot.getSlotElementId() == "div-gpt-ad-sticky" && event.isEmpty != true){
-             document.querySelector("#muse_container").style.display = "block";
+             document.querySelector("#muse_adhesion").style.display = "block";
              document.querySelector("#div-gpt-ad-sticky").classList.add("item-fade");
              document.querySelector("#adhesion-top-section").style.display = "block";
          }
