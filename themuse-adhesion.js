@@ -31,14 +31,6 @@ window.onload = function(){
 
     adhesion_container.appendChild(sticky_div);
 
-
-        var link = document.createElement('link');  
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = 'https://hellosze.github.io/themuse-adhesion.css';
-
-  document.body.appendChild(link);
-
   document.body.appendChild(adhesion_container);
 
 
